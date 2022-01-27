@@ -35,3 +35,12 @@ git push origin main
 git pull origin main
 ````
 - Sirve para porder descargar todos los cambios de nuestro repositorio en la nube a nuestro local
+
+````
+git branch
+`````
+- Sirce para poder listas los branch que tengo localmente y me dice en cual me encuentro actualmente
+
+`````
+git checkout -b nombre_del_branch
+`````
