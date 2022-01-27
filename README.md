@@ -30,3 +30,8 @@ Los comentarios deben estar relacionados a los cambios que hice, esto es una rec
 git push origin main
 ```
 - Sirve para poder subir los cambios a nuestro repositorio en la nube, en este caso github
+
+````
+git pull origin main
+````
+- Sirve para porder descargar todos los cambios de nuestro repositorio en la nube a nuestro local
