@@ -44,3 +44,9 @@ git branch
 `````
 git checkout -b nombre_del_branch
 `````
+- Sirve para crear una nueva rama
+
+`````
+git checkout nombre_del_branch
+`````
+- Sirve para moverte entre ramas
