@@ -1,0 +1,59 @@
+body {
+    font-family: Helvetica;
+  }
+  
+  .link-referencia {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    width: 200px;
+    display: inline-block;
+    text-align: center;
+  }
+  
+  .link-referencia:hover {
+    text-decoration: underline;
+    font-weight: bold;
+  }
+
+  .contenedor_principal h1{
+      text-transform: uppercase;
+      letter-spacing: 1.2rem;
+      background: black;
+      color: white;
+      width: 700px;
+      margin: auto;
+      margin-bottom: 20px;
+      margin-top: 20px;
+  }
+
+  .contenedor_principal{
+      text-align: center;
+  }
+
+  .contenedor_principal .texto-descripcion{
+      width: 700px;
+    margin: auto;
+  }
+
+  .imagen_perfil{
+      border-radius: 500px;
+      margin-top: 20px;
+  }
+
+  .contenedor_principal .iconos_conocimientos li{
+      list-style: none;
+  }
+
+  .contenedor_principal .iconos_conocimientos li img{
+    width: 100px;
+    border: 1px solid black;
+    padding: 20px;
+    padding-top: 0px;
+    padding-bottom: 0;
+    border-radius: 15px;
+}
+  
