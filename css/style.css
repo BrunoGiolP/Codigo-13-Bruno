@@ -65,6 +65,7 @@ body {
 .contenedor_clases{
   height: 100vh;
   background-color: rgb(230, 202, 113);
+  min-height: 935px;
 }
 
 .contenedor_clases ul li{
