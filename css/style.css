@@ -56,4 +56,40 @@ body {
     padding-bottom: 0;
     border-radius: 15px;
 }
+
+.contenedor_principal .dibujo_developer{
+  border-radius: 12px;
+  margin-top: 40px;
+}
+
+.contenedor_clases{
+  height: 100vh;
+  background-color: rgb(230, 202, 113);
+}
+
+.contenedor_clases ul li{
+  list-style: none;;
+}
+
+.contenedor_clases h3{
+  font-size: 3em;
+  margin: 20px;;
+}
   
+.contenedor_clases .divisor_semanas{
+  margin: 20px;
+  height: 4px;
+  background-color: #000;
+  border: none;
+  border-radius: 12px;
+}
+
+.contenedor_clases .lista_semanas{
+  margin: 40px;
+  padding: 40px;
+  list-style: none;
+}
+
+.contenedor_clases .link-referencia{
+  margin: 20px;
+}
