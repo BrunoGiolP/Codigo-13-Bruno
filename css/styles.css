@@ -115,16 +115,16 @@ body {
 .text-works p{
   position: absolute;
   width: 100%;
-  animation: teclado 5s steps(144) 1s normal both;
+  animation: teclado 8s steps(144) 1s normal both;
   animation-iteration-count: infinite;
 }
 
 @keyframes teclado {
-  from {
+  0%{
     left: 100%;
   }
 
-  to {
+  40% {
     left: 0;
   }
 }
