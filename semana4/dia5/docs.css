@@ -3,10 +3,6 @@
   padding: 0;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   font-family: "Poppins", sans-serif;
   color: #fff;
@@ -38,6 +34,7 @@ body {
 
 .grid-container > div {
   border: solid 1px #ccc;
+  scroll-behavior: smooth;
 }
 
 .item1 {
