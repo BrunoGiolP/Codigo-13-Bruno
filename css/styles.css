@@ -1,23 +1,25 @@
 * {
   margin: 0;
   padding: 0;
+  color: white;
 }
 
 html {
   scroll-behavior: smooth;
+  background-color: black;
 }
 
 body {
-  font-family: "Heebo", sans-serif;
+  font-family: 'Roboto', sans-serif;
   position: relative;
 }
 
 .header {
   display: flex;
-  /* flex-start
-    center
-    flex-end */
-  justify-content: space-evenly;
+  justify-content: end;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
 }
 
 .logo{
@@ -38,15 +40,46 @@ body {
 
 .nav ul li a {
   text-decoration: none;
-  color: #000;
+  color: white;
   font-weight: 600;
 }
 
+.nav ul li a:hover{
+  color: #ff6464;
+}
+
+
 .banner {
-  height: 60vh;
+  height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: end;
+  background: url(./../imagenes/fondo.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  overflow: hidden;
+  flex-direction: column-reverse;
+  text-align: center;
+}
+
+.container-banner-text{
+  padding-bottom: 100px;
+}
+
+.banner > div{
+  width: 300px;
+  z-index: 1;
+
+}
+
+.banner > img{
+  width: 100%;
+  position: absolute;
+  bottom: -100px;
+  z-index: 0;
+  height: 300px;
 }
 
 .title {
@@ -55,7 +88,8 @@ body {
 }
 
 .resume {
-  width: 45%;
+  width: 75%;
+  margin: auto;
   font-weight: 300;
   margin-top: 25px;
   margin-bottom: 25px;
@@ -69,12 +103,11 @@ body {
   text-transform: capitalize;
   font-size: 16px;
   cursor: pointer;
-  border-radius: 10px;
 }
 
 .img-profile {
-  width: 243px;
-  height: 243px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
 }
 
@@ -159,7 +192,7 @@ body {
 }
 
 .label-dark {
-  background-color: #142850;
+  background-color: #ff6464;
   color: #fff;
   border-radius: 16px;
   padding: 5px 10px;
