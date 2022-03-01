@@ -45,6 +45,85 @@ btnInfo.onclick = function () {
   showAlert("info", "Informacion", "Mensaje informativo de mi alerta");
 };
 
+const btnAlertaBotones = document.querySelector("#btn-alerta-botones");
+btnAlertaBotones.onclick = function () {
+  Swal.fire({
+    title: "Alerta",
+    text: "Texto de alerta",
+    showDenyButton: true,
+    showCancelButton: true,
+    confirmButtonText: "Guardar",
+    denyButtonText: "Nel pastel",
+  }).then((resultado) => {
+    console.log("resultado", resultado);
+    if (resultado.isConfirmed) {
+      showAlert("success", "Confirmado", "Se confirmo la operacion");
+      console.log("marco la confirmacion");
+    }
+
+    if (resultado.isDenied) {
+      console.log("marco que nel pastel");
+    }
+
+    if (resultado.isDismissed) {
+      console.log("marco cancel");
+    }
+  });
+};
+
+const btnAlertNotification = document.querySelector("#btn-alerta-notificacion");
+// 1000 => 1 segundo
+btnAlertNotification.onclick = function () {
+  Swal.fire({
+    position: "top-end", // top, center, top-start, center-start, center-end, bottom, bottom-start, bottom-end
+    icon: "success",
+    title: "Notificacion",
+    showConfirmButton: false,
+    timer: 3000,
+  });
+};
+
+const urlMarvel =
+  "https://www.cinemascomics.com/wp-content/uploads/2022/02/villanos-marvel-comics-960x720.jpg";
+const btnAlertaImagen = document.querySelector("#btn-alerta-imagen");
+btnAlertaImagen.onclick = function () {
+  Swal.fire({
+    title: "Imagen",
+    text: "Alerta con imagen",
+    imageUrl: urlMarvel,
+    imageWidth: 300,
+    imageHeight: 300,
+  });
+};
+
+const btnAlertCustom = document.querySelector("#btn-alerta-custom");
+btnAlertCustom.onclick = function () {
+  Swal.fire({
+    title: "Custom Alert",
+    text: "Alerta customisable",
+    background: `url(${urlMarvel})`,
+    color: "#fff",
+    backdrop: `
+    url(https://media3.giphy.com/media/Y6OITrN9Y7G0M/giphy.gif)
+    left top
+    no-repeat
+    `,
+  });
+}; 
+const btnAlertInput = document.querySelector("#btn-alerta-inputs");
+btnAlertInput.onclick = function () {
+  Swal.fire({
+    title: "Input para email",
+    input: "email",
+    inputLabel: "Ingrese su correo",
+    inputPlaceholder: "El correo debe ser valido",
+  }).then((resultado) => {
+    // obtengo el resultado de lo que escribio el usario en el input
+    console.log(resultado.value);
+  });
+};
+
+
 const paises = document.querySelector("#select-opciones");
 
 // onchange: Sirve para detectar si hay un cambio en mi elemento
