@@ -1,4 +1,5 @@
 const containerPokemons = document.querySelector("#pokemon-card");
+const nombrePokemon = document.querySelector("#poke-name");
 
 const pokes = [
             {
@@ -4087,50 +4088,29 @@ const pokes = [
         }];
 
 const mostrarPokemon = () =>{
-    pokes.map(async (poke) => {
-        console.log(poke);
-        
+    pokes.map(async (poke, index) => {
+        console.log(`${index+1} - ${poke.name}`)
         const html = `
         <div class="col-md-2" >
         <div class="card pokemon-card mt-3">
             <img src= ${poke.img} alt="">
             <span>Nº ${poke.id}</span>
             <h5>${poke.name}</h5>
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="mostrarPokemon">
               Pokemon Info
             </button>
           </div>
           </div>
-
-          
-        <div class="modal fade" id="exampleModal" tabindex="-1">
-            <div class="modal-dialog">
-                <div class="modal-content" id="pokemodal">
-                    <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Nº${poke.id}   ${poke.name}</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="poke-data">
-                            <img class="modal-poke-image" src= ${poke.img} alt="">
-                            <div class="poke-type">
-                                <h6>TYPE</h6>
-                                ${poke.type.map(
-                                    (types) => `<span>${types} </span>`
-                                )} 
-                            </div>
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                    </div>
-                </div>
-            </div>
-        </div>
         `;
-        containerPokemons.innerHTML += html.replaceAll(",", "");
+
+        nombrePokemon.innerHTML = poke.name;
+      
+        containerPokemons.innerHTML += html;
     });
+      
 };
 mostrarPokemon();
+
+
+
 

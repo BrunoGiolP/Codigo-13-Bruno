@@ -1,43 +1,46 @@
-// BAR CHART
-
-const contenedorBarChart = document.querySelector("#bar-chart").getContext("2d")
+/**
+ * chart de tipo bar
+ */
+const contenedorBarChart = document
+  .querySelector("#bar-chart")
+  .getContext("2d");
 
 const barChart = new Chart(contenedorBarChart, {
-    type: "bar",
-    data: {
-        labels :[
-            "Lunes",
-            "Martes",
-            "Mircoles",
-            "Jueves",
-            "Viernes",
-            "Sabado",
-            "Domingo",
+  type: "bar",
+  data: {
+    labels: [
+      "Lunes",
+      "Martes",
+      "Miercoles",
+      "Jueves",
+      "Viernes",
+      "Sabado",
+      "Domingo",
+    ],
+    datasets: [
+      {
+        label: "Numero de usuarios por dia",
+        data: [20, 40, 10, 100, 50, 75, 200],
+        borderWidth: 3,
+        borderColor: "#f01",
+        backgroundColor: [
+          "rgba(0, 255, 265, 0.7)",
+          "#f01",
+          "#ba1",
+          "#dac",
+          "#eda",
+          "#a34",
+          "#234",
         ],
-        datasets: [{
-            label: "Numero de usuarios por dia",
-            data: [20, 40,10 ,100 , 59 ,75 ,200],
-            borderWidth: 3,
-            borderColor: "",
-            backgroundColor: [
-                "purple",
-                "yellow",
-                "skyblue",
-                "pink",
-                "orange",
-                "green",
-                "brown",
-            ]
-         }],
-    },
+      },
+    ],
+  },
 });
-
-// DOUGHNUT CHART
 
 const containerDoughnutChart = document
   .querySelector("#doughnut-chart")
   .getContext("2d");
-
+// Estos es para los datos
 const dataForChart = {
   labels: ["Computadoras", "Celulares", "Refrigeradoras", "Parlantes"],
   datasets: [
@@ -48,25 +51,24 @@ const dataForChart = {
     },
   ],
 };
-
+// Esto es para crear el tipo y dar la configuracion de datos
 const config = {
   type: "doughnut",
   data: dataForChart,
 };
-
+// Esto es para la creacion
 const donutChart = new Chart(containerDoughnutChart, config);
 
-// LINEAR CHART
+const containerLineChart = document
+  .querySelector("#lineal-chart")
+  .getContext("2d");
 
-const containerLineChart = document.querySelector("#lineal-chart");
 const configLineal = {
-    type: "line",
-    data: dataForChart,
+  type: "line",
+  data: dataForChart,
 };
 
 const lineChart = new Chart(containerLineChart, configLineal);
-
-// BUBBLE CHART
 
 const containerBubbleChart = document
   .querySelector("#bubble-chart")
@@ -75,17 +77,17 @@ const containerBubbleChart = document
 dataForChart.datasets[0].data = [
   {
     x: 20,
-    y: 27,
-    r: 30,
+    y: 30,
+    r: 15,
   },
   {
-    x: 20,
+    x: 40,
     y: 10,
     r: 10,
   },
   {
-    x: 40,
-    y: 20,
+    x: 80,
+    y: 10,
     r: 10,
   },
 ];
@@ -97,31 +99,27 @@ const configBubble = {
 
 const bubbleChart = new Chart(containerBubbleChart, configBubble);
 
-// POLAR CHART
-
+// Polar chart
 const containerPolarChart = document
-.querySelector("#polar-chart")
-.getContext("2d");
+  .querySelector("#polar-chart")
+  .getContext("2d");
 
-dataForChart.datasets[0].data = [300,149,321,678];
+dataForChart.datasets[0].data = [300, 249, 321, 278];
 
 const configPolar = {
-    type: "polarArea",
-    data: dataForChart,
-}
-const PolarChart = new Chart(containerPolarChart, configPolar);
-
-
-const containerRadarChart = document.querySelector("#radar-chart").getContext("2d");
-
-const configRadar = {
-    type: "radar",
-    data: dataForChart,
+  type: "polarArea",
+  data: dataForChart,
 };
 
-const RadarChart = new Chart(containerRadarChart, configRadar);
+const polarChart = new Chart(containerPolarChart, configPolar);
 
-// SCATTER CHART
+const containerRadarChart = document.querySelector("#radar-chart");
+const configRadarChart = {
+  type: "radar",
+  data: dataForChart,
+};
+
+const radarChart = new Chart(containerRadarChart, configRadarChart);
 
 const containerScatterChart = document
   .querySelector("#scatter-chart")

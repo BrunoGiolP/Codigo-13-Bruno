@@ -104,12 +104,14 @@ btnAlertCustom.onclick = function () {
     background: `url(${urlMarvel})`,
     color: "#fff",
     backdrop: `
-    url(https://media3.giphy.com/media/Y6OITrN9Y7G0M/giphy.gif)
+    rgba(0, 0, 0, 0.3)
+    url(https://media.giphy.com/media/xT5LMHxhOfscxPfIfm/giphy.gif)
     left top
     no-repeat
     `,
   });
-}; 
+};
+
 const btnAlertInput = document.querySelector("#btn-alerta-inputs");
 btnAlertInput.onclick = function () {
   Swal.fire({
@@ -122,7 +124,6 @@ btnAlertInput.onclick = function () {
     console.log(resultado.value);
   });
 };
-
 
 const paises = document.querySelector("#select-opciones");
 

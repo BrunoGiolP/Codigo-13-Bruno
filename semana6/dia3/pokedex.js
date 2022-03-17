@@ -94,6 +94,3 @@ const getColorPokemon = async (id) => {
   console.log(data.color.name);
   return color[data.color.name];
 };
-
-
-const containerJobs = document.querySelector("#contenedor-modal");

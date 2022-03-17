@@ -6,22 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
-  <body style="background-color: gray">
+  <body>
     <!-- Cuando vayamos a usar html y js juntos la eqiqueta script debe estar
   dentro del body en la parte final -->
     <form action="">
-      <input type="email" value="pepe@gmail.com" id="input_email" placeholder="Email" />
-      <input type="password" value="123456" id="input_password" placeholder="Password" />
-      <input type="text" value="Pepe" class="input_name" placeholder="Name" />
-      <input type="text" value="Zapata" class="input_name" placeholder="Lastname" />
-      <button>Crear usuario</button>
+      <input
+        id="input_email"
+        value="pepe@gmail"
+        type="email"
+        placeholder="Email"
+      />
+      <input
+        id="input_password"
+        value="123456"
+        type="password"
+        placeholder="Password"
+      />
+      <input class="input_name" value="pepe" type="text" placeholder="Name" />
+      <input
+        class="input_name"
+        value="zapata"
+        type="text"
+        placeholder="Lastname"
+      />
+      <button class="btn_registro">Crear usuario</button>
     </form>
-
     <div>
-        <h1>Hola mundo</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam nesciunt qui incidunt aliquam cum, hic nobis quas itaque voluptates rem nam quis ratione ut dolor odit vitae velit? Ab, voluptates!</p>
+      <h1>Hola mundo</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+        doloremque.
+      </p>
     </div>
     <div id="container-list"></div>
+    <!-- <script src="./dom.js"></script> -->
+    <!-- <script src="./dom2.js"></script> -->
     <script src="./dom3.js"></script>
   </body>
 </html>
