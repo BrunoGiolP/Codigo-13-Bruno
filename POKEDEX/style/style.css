@@ -41,13 +41,22 @@ h1{
     background-color: #002152;
 }
 
-.poke-type span{
+
+.poke-type div{
+    color: transparent;
+}
+
+.poke-type div li{
     background: #bbebff;
     padding: 5px;
     border-radius: 10px;
     padding-left: 10px;
     padding-right: 10px;
     font-weight: bold;
+    margin: auto;
     font-size: 15px;
-    margin-right: 5px;
+    width: 100px;
+    list-style: none;
+    color: black;
+    margin-bottom: -10px;
 }

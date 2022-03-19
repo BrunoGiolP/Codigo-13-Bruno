@@ -39,9 +39,7 @@ const renderJobs = (arrayObjectJobs) => {
           </div>
         </div>
         <div class="column-3">
-          ${job.languages.map(
-            (language) => `<span class="skill">${language}</span>&nbsp;&nbsp;`
-          )}
+          ${job.languages.map((language) => `<span class="skill">${language}</span>&nbsp;&nbsp;`)}
           ${job.tools.map(
             (tool) => `<span class="skill">${tool}</span>&nbsp;&nbsp;`
           )}
