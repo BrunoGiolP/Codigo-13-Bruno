@@ -61,9 +61,8 @@ h1{
     margin-bottom: -10px;
 }
 
-@media only screen and(max-width: 450px) {
-    .pokemon-card img {
-        width: 30%;
-        margin: auto;
+@media only screen and (max-width: 500px){
+    .pokemon-card img{
+        width: 30% !important;
     }
 }
