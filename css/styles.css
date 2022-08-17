@@ -115,7 +115,10 @@ body {
   margin: auto;
 }
 
-
+.card {
+  display: flex;
+  flex-direction: row;
+}
 
 .card div img {
   width: 246px;
