@@ -253,7 +253,7 @@ footer span{
     font-size: 1.3em;
   }
   .banner{
-    height: 70vh;
+    height: 85vh;
   }
   .card{
     flex-direction: column !important;
@@ -272,7 +272,7 @@ footer span{
   }
 
   .container-detail{
-    font-size: 1.3em;
+    font-size: 1.1em;
   }
 }
 
