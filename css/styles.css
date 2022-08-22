@@ -69,9 +69,12 @@ body {
 }
 
 .banner > div{
-  width: 300px;
+  width: 100%;
   z-index: 1;
+}
 
+.img-profile-container{
+  width: 300px !important;
 }
 
 .banner > img{
@@ -79,6 +82,10 @@ body {
   position: absolute;
   z-index: 0;
   height: 100vh;
+}
+
+a{
+  text-decoration: none;
 }
 
 .title {
@@ -89,9 +96,10 @@ body {
 .resume {
   width: 100%;
   margin: auto;
-  font-weight: 300;
+  font-weight: bold;
   margin-top: 25px;
   margin-bottom: 25px;
+  font-size: 15px;
 }
 
 .btn-primary {
@@ -272,7 +280,7 @@ footer span{
   }
 
   .container-detail{
-    font-size: 1.1em;
+    font-size: 0.8em;
   }
 }
 
@@ -292,6 +300,7 @@ footer span{
 #belcorp{
   background-color: white;
   padding-bottom: 50px;
+  height: 100vh;
 }
 
 section{
