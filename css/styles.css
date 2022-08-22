@@ -1,12 +1,11 @@
 * {
   margin: 0;
   padding: 0;
-  color: white;
+  color: black;
 }
 
 html {
   scroll-behavior: smooth;
-  background-color: black;
 }
 
 body {
@@ -14,12 +13,21 @@ body {
   position: relative;
 }
 
+.background-grey{
+  background: #ededed;
+    height: 400px;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+}
+
 .header {
   display: flex;
   justify-content: end;
   position: fixed;
   width: 100%;
-  z-index: 1;
+  z-index: 3;
 }
 
 .logo{
@@ -40,7 +48,7 @@ body {
 
 .nav ul li a {
   text-decoration: none;
-  color: white;
+  color: black;
   font-weight: 600;
 }
 
@@ -48,33 +56,35 @@ body {
   color: #ff6464;
 }
 
+h1 span{
+  font-weight: lighter;
+}
 
 .banner {
   height: 100vh;
   display: flex;
-  align-items: center;
-  justify-content: end;
-  background: url(./../imagenes/fondo.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
   position: relative;
   overflow: hidden;
-  flex-direction: column-reverse;
   text-align: center;
+  align-items: center;
+  flex-direction: row-reverse;
+  justify-content: center;
+  z-index: 2;
 }
 
 .container-banner-text{
   padding-bottom: 100px;
 }
 
-.banner > div{
-  width: 100%;
-  z-index: 1;
-}
-
-.img-profile-container{
-  width: 300px !important;
+.img-profile-container {
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  background-image: url(../imagenes/profile.JPG);
+  background-position: bottom;
+  background-size: cover;
+  border-radius: 50%;
+  border: 9px solid white;
 }
 
 .banner > img{
@@ -91,14 +101,14 @@ a{
 .title {
   font-size: 3em;
   font-weight: 500;
+  text-transform: uppercase;
 }
 
 .resume {
   width: 100%;
   margin: auto;
   font-weight: bold;
-  margin-top: 25px;
-  margin-bottom: 25px;
+  margin-bottom: 44px;
   font-size: 15px;
 }
 
@@ -110,12 +120,6 @@ a{
   text-transform: capitalize;
   font-size: 16px;
   cursor: pointer;
-}
-
-.img-profile {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
 }
 
 .section-works {
@@ -327,7 +331,7 @@ section{
   filter: brightness(0.5);
 }
 
-h1{
+#belcorp h1{
   width: 200px;
   margin: auto;
   margin-bottom: 50px;
@@ -335,4 +339,8 @@ h1{
 
 h1 img{
   width: 100%;
+}
+
+@media only screen and (max-width: 600px){
+
 }
