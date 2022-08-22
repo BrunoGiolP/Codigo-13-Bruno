@@ -254,20 +254,32 @@ footer span{
 @media only screen and (max-width: 600px){
   .header{
     z-index: 99999;
-    background: black;
+    background:  #ff6464;
+  }
+
+  .header ul li a{
+    color: white !important;
+  }
+  .banner {
+    flex-direction: column-reverse;
   }
 
   .img-profile-container {
-    width: 50%;
-    height: 50%;
+    width: 300px;
+    height: 300px;
 }
  
   .resume{
     font-size: 1.3em;
   }
   .banner{
-    height: 85vh;
+    height: 50vh;
   }
+
+  .container-banner-text{
+    padding: 0;
+  }
+
   .card{
     flex-direction: column !important;
   }
@@ -300,9 +312,10 @@ footer span{
     }
 
     .img-profile-container {
-      width: 30%;
-      height: 30%;
+      width: 200px;
+      height: 200px;
   }
+
 }
 
 /* BELCORP */
