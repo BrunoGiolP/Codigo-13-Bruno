@@ -256,11 +256,12 @@ footer span{
     z-index: 99999;
     background: black;
   }
-  .img-profile{
-    width: 70%;
-    height: auto;
-    border-radius: 50%;
-  }
+
+  .img-profile-container {
+    width: 50%;
+    height: 50%;
+}
+ 
   .resume{
     font-size: 1.3em;
   }
@@ -297,6 +298,11 @@ footer span{
     object-fit: cover;
     border-radius: 8px;
     }
+
+    .img-profile-container {
+      width: 30%;
+      height: 30%;
+  }
 }
 
 /* BELCORP */
