@@ -305,7 +305,7 @@ footer span{
 }
 
   h4 p{
-    font-size: 3em;
+    font-size: 7em;
   }
 
   .arrow{
@@ -365,6 +365,10 @@ footer span{
     .img-profile-container {
       width: 200px;
       height: 200px;
+  }
+
+  h4 p{
+    font-size: 3em;
   }
 
 }
