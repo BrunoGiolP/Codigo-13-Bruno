@@ -232,6 +232,11 @@ h4 p{
   width: 100% !important;
 }
 
+.text-works{
+  width: 80%;
+  font-size: 1.8em;
+}
+
 .label-dark {
   background-color: #ff6464;
   color: #fff;
