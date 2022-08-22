@@ -317,11 +317,11 @@ footer span{
   
   @keyframes arrow {
     0%{
-      bottom: 180px;
+      bottom: 140px;
     }
   
     80% {
-      bottom: 170px;
+      bottom: 130px;
     }
   }
  
