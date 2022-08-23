@@ -137,6 +137,10 @@ body {
   font-weight: bold;
 }
 
+i.fa.fa-bars {
+  display: none;
+}
+
 @media only screen and (max-width: 600px){
   .grid-container {
     display: grid;
@@ -150,5 +154,17 @@ body {
 
   .item1{
     left: -300px;
+  }
+
+  i.fa.fa-bars {
+    display: block;
+    position: absolute;
+    top: 40px;
+    left: 50px;
+    cursor: pointer;
+  }
+
+  .fa-navicon:before, .fa-reorder:before, .fa-bars:before {
+    font-size: 20px;
   }
 }
