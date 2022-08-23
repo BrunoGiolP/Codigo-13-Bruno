@@ -136,3 +136,19 @@ body {
   right: 50px;
   font-weight: bold;
 }
+
+@media only screen and (max-width: 600px){
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    height: 100vh;
+    grid-template-areas:
+        "navbar"
+        "content";
+  }
+
+  .item1{
+    left: -300px;
+  }
+}
