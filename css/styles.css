@@ -312,7 +312,7 @@ footer span{
     animation: arrow 1s steps(144) 1s normal both;
     animation-iteration-count: infinite;
     position: absolute;
-    bottom: 200px;
+    bottom: 140px;
   }
   
   @keyframes arrow {
