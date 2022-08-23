@@ -164,7 +164,24 @@ i.fa.fa-bars {
     cursor: pointer;
   }
 
-  .fa-navicon:before, .fa-reorder:before, .fa-bars:before {
+  i.fa.fa-bars .fa-navicon:before, .fa-reorder:before, .fa-bars:before {
     font-size: 20px;
   }
+  .item1 {
+    width: 200px;
+    z-index: 2;
+    transition: 0.5s;
+  }
+
+  .fa-times{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+  }
+
+  .fa-remove:before, .fa-close:before, .fa-times:before {
+    content: "\f00d";
+    font-size: 20px;
+}
 }

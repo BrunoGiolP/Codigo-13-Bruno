@@ -18,11 +18,20 @@
     <link rel="stylesheet" href="./docs.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    <script>
+      function abrirMenu() {
+        document.querySelector(".item1").style.left = "0";
+      }
+      function cerrarMenu() {
+        document.querySelector(".item1").style.left = "-300px";
+      }
+      </script>
   </head>
   <body>
     <section class="grid-container">
       <!-- menu -->
       <div class="item1">
+        <i class="fa fa-times" aria-hidden="true" onclick="cerrarMenu()"></i>
         <div class="container-tema">
           <h4>Variables</h4>
           <ul>
@@ -110,7 +119,7 @@
       </div>
       <!-- navbar -->
       <div class="item2">
-        <i class="fa fa-bars" aria-hidden="true"></i>
+        <i class="fa fa-bars" aria-hidden="true" onclick="abrirMenu()"></i>
         <div class="logo-container">
           <a
             class="btn-github"
