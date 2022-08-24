@@ -350,6 +350,12 @@ footer span{
   .container-detail{
     font-size: 0.8em;
   }
+
+  .text-works{
+    width: 100%;
+    font-size: 1em;
+  }
+  
 }
 
 @media only screen and (max-width: 420px){
