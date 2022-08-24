@@ -170,7 +170,7 @@ a{
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 10px;
-    height: 66px;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -235,7 +235,7 @@ h4 p{
 
 .text-works{
   width: 100%;
-  font-size: 1.8em;
+  font-size: 8.8em;
 }
 
 .label-dark {
