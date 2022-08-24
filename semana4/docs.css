@@ -177,11 +177,11 @@ i.fa.fa-bars {
     position: absolute;
     right: 20px;
     top: 20px;
-}
   }
+  
 
   .fa-remove:before, .fa-close:before, .fa-times:before {
     content: "\f00d";
     font-size: 20px;
-}
+  }
 }
