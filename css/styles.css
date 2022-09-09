@@ -479,3 +479,26 @@ h1 img{
 #cyzone section div img:hover{
   width: 90%;
 }
+
+#cyzone .btn-primary {
+  background-color: white;
+  color: #fff;
+  border: none;
+  padding: 15px;
+  text-transform: capitalize;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#cyzone .btn-primary img{
+  width: 95%;
+}
+
+#cyzone .btn-primary img:hover{
+  width: 100%;
+  transition: 1s;
+}
+
+#cyzone .modal-poke-image{
+  width: 100%;
+}
