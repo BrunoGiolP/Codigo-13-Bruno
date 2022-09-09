@@ -484,10 +484,12 @@ h1 img{
   background-color: white;
   color: #fff;
   border: none;
-  padding: 15px;
+  height: 200px;
+  padding: 0;
   text-transform: capitalize;
   font-size: 16px;
   cursor: pointer;
+  overflow: hidden;
 }
 
 #cyzone .btn-primary img{
