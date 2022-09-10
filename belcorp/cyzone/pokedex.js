@@ -8,7 +8,7 @@ const mostrarPokemon = () =>{
         //console.log(`${index+1} - ${poke.name}`)
         console.log(poke.type)
         const html = `
-        <div class="col-md-2 col-sm-6" >
+        <div class="col-md-2 col-sm-6 col-xs-6" >
         <div class="card pokemon-card mt-3">
             
             <button type="button" class="btn btn-primary" 
