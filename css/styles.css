@@ -146,22 +146,70 @@ a{
   cursor: pointer;
 }
 
+a.link-portafolio {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+
+section#works .works-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: white;
+  grid-template-rows: 25vh 25vh;
+  grid-template-areas:
+      "belcorp tarjeta community"
+      "comments tarjeta pokedex"
+      ;
+}
+
+.work-image{
+  overflow: hidden;
+}
+
+.item1{
+  grid-area: belcorp;
+  background-image: url('../imagenes/belcorp.png');
+  background-size: cover;
+}
+
+.item2{
+  grid-area: tarjeta;
+  background-image: url('../imagenes/portafolio/nft.png');
+  background-size: cover;
+}
+
+.item3{
+  grid-area: community;
+  background-image: url('../imagenes/portafolio/web.png');
+  background-size: cover;
+}
+
+.item4{
+  grid-area: comments;
+  background-image: url('../imagenes/portafolio/comments.png');
+  background-size: cover;
+}
+
+.item5{
+  grid-area: pokedex;
+  background-image: url('../imagenes/portafolio/reto4.png');
+  background-size: cover;
+}
+
+section#works .works-container .link-portafolio img{
+  width: 100%;
+}
+
+section#works .works-container .link-portafolio img{
+  width: 100%;
+}
+
 .section-works {
-  max-width: 800px;
+  width: 800px;
   margin: auto;
-  padding-top: 100px;
-}
-
-.card {
-  display: flex;
-  flex-direction: row;
-}
-
-.card div img {
-  width: 246px;
-  height: 180px;
-  object-fit: cover;
-  border-radius: 8px;
+  padding-top: 50px;
 }
 
 .text-works {
@@ -185,89 +233,12 @@ a{
 h4 p{
   color: #d2d2d2;
 }
-/*
-.text-works p{
-  position: absolute;
-  width: 100%;
-  animation: teclado 8s steps(144) 1s normal both;
-  animation-iteration-count: infinite;
-}
-
-
-@keyframes teclado {
-  0%{
-    left: 100%;
-  }
-
-  40% {
-    left: 0;
-  }
-}
-
-.cursor{
-  position: absolute;
-  width: 20px;
-  height: 80px;
-  background: violet;
-  left: 99%;
-  z-index: 2;
-  animation: cursor 0.5s steps(50) infinite normal;
-}
-
-@keyframes cursor {
-  from {
-    background: rgb(255, 77, 196);
-  }
-  to {
-   background: white;
-  }
-}
-*/
-
-.container-detail {
-  margin-left: 20px;
-}
-
-.container-detail p {
-  margin-top: 20px;
-  width: 100% !important;
-}
 
 .text-works{
   width: 100%;
   font-size: 8.8em;
 }
 
-.label-dark {
-  background-color: #ff6464;
-  color: #fff;
-  border-radius: 16px;
-  padding: 5px 10px;
-  font-weight: bold;
-}
-
-.text-light {
-  color: #8695a4;
-}
-
-hr {
-  height: 0.5px;
-  background-color: #e0e0e0;
-  border: 0.5px solid #e0e0e0;
-  margin-top: 10px;
-  margin-bottom: 20px;
-}
-
-.link-portafolio {
-  color: #000;
-  text-decoration: none;
-  transition: 0.3s;
-}
-
-.link-portafolio:hover {
-  color: #ff6464;
-  text-decoration: underline;
-}
 
 footer{
   position: relative;
