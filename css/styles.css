@@ -166,6 +166,30 @@ section#works .works-container {
 
 .work-image{
   overflow: hidden;
+  background-position: center;
+}
+
+.link-portafolio::before{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background-color: transparent;
+  content: 'hola';
+  color: transparent;
+  text-align: center;
+  transition: 0.5s;
+  font-size: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.link-portafolio:hover::before{
+  width: 100%;
+  height: 100%;
+  background-color: #000000ad;
+  content: 'hola';
+  color: white;
+  text-align: center;
 }
 
 .item1{
@@ -174,10 +198,19 @@ section#works .works-container {
   background-size: cover;
 }
 
+.item1 .link-portafolio::before{
+  content: 'BELCORP';
+}
+
 .item2{
   grid-area: tarjeta;
   background-image: url('../imagenes/portafolio/nft.png');
   background-size: cover;
+}
+
+
+.item2 .link-portafolio::before{
+  content: 'FLEX BOX';
 }
 
 .item3{
@@ -186,16 +219,28 @@ section#works .works-container {
   background-size: cover;
 }
 
+.item3 .link-portafolio::before{
+  content: 'GRID';
+}
+
 .item4{
   grid-area: comments;
   background-image: url('../imagenes/portafolio/comments.png');
   background-size: cover;
 }
 
+.item4 .link-portafolio::before{
+  content: 'COMMENTS';
+}
+
 .item5{
   grid-area: pokedex;
   background-image: url('../imagenes/portafolio/reto4.png');
   background-size: cover;
+}
+
+.item5 .link-portafolio::before{
+  content: 'POKEDEX';
 }
 
 section#works .works-container .link-portafolio img{
@@ -258,6 +303,19 @@ footer span{
 }
 
 @media only screen and (max-width: 600px){
+  section#works .works-container {
+      display: flex;
+      grid-template-columns: auto auto auto;
+      background-color: white;
+      flex-direction: column;
+  }
+  .work-image {
+      overflow: hidden;
+      width: 80%;
+      height: 250px;
+      margin: auto;
+      background-position: center;
+  }
   .header{
     z-index: 99999;
     background:  #ff6464;
@@ -273,7 +331,7 @@ footer span{
   .img-profile-container {
     width: 300px;
     height: 300px;
-}
+  }
 
   h4 p{
     font-size: 7em;
