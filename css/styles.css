@@ -526,8 +526,8 @@ h1 img{
 }
 
 #cyzone .btn-primary img:hover{
-  width: 100%;
-  transition: 1s;
+  filter:grayscale(1);
+  transition: 0.3s;
 }
 
 #cyzone .modal-poke-image{
