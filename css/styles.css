@@ -293,6 +293,7 @@ h4 p{
   font-size: 8.8em;
 }
 
+
 .container-contact{
     display: flex;
     justify-content: space-evenly;
@@ -323,6 +324,9 @@ footer span{
 }
 
 @media only screen and (max-width: 600px){
+  #contact{
+    background-image: url(../imagenes/background-inicio.jpg);
+  }
 
   body {
       background-image: none;
