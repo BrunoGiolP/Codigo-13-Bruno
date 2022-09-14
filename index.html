@@ -104,7 +104,9 @@
     </footer>
 
     <script>
-      var cuerpo = document.getElementsByTagName('header')[0];
+
+if (screen.width < 600) {
+  var cuerpo = document.getElementsByTagName('header')[0];
       cuerpo.style.backgroundColor = 'transparent';
 
       // trigger this function every time the user scrolls
@@ -118,6 +120,25 @@
               cuerpo.style.backgroundColor = 'white';
           }
       }
+} else {
+  var cuerpo = document.getElementsByTagName('header')[0];
+      cuerpo.style.backgroundColor = 'transparent';
+
+      // trigger this function every time the user scrolls
+      window.onscroll = function (event) {
+          var scroll = window.pageYOffset;
+          if (scroll < 300) {
+              // green
+              cuerpo.style.backgroundColor = 'transparent';
+          } else {
+              // purple
+              cuerpo.style.backgroundColor = 'black';
+          }
+      }
+}
+
+      
+      
   </script>
   </body>
 </html>
