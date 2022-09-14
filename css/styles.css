@@ -317,7 +317,10 @@ footer{
   align-items: center;
   width: 100%;
   justify-content: center;
-  margin-top: 40px;
+}
+
+footer img{
+  filter: invert(1);
 }
 
 footer span{
@@ -430,6 +433,9 @@ footer span{
     width: 100%;
     font-size: 1em;
   }
+  footer{
+    background-color: black;
+  }
   
 }
 
@@ -451,6 +457,8 @@ footer span{
   h4 p{
     font-size: 3em;
   }
+
+  
 
 }
 
