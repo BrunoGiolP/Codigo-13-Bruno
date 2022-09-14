@@ -19,6 +19,7 @@ body {
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
+    overflow-x: hidden;
 }
 
 .background-grey{
@@ -326,15 +327,25 @@ footer span{
 @media only screen and (max-width: 600px){
   #contact{
     background-image: url(../imagenes/background-inicio.jpg);
+    margin-top: 30px;
   }
 
   body {
       background-image: none;
   }
 
-  .banner{
-    background-color: grey;
-  }
+  .background-grey {
+    background: #e6e6e6;
+    height: 50vh;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+}
+
+.arrow {
+  color: black;
+}
 
   section#works .works-container {
       display: flex;
