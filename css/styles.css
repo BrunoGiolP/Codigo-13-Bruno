@@ -312,12 +312,22 @@ footer span{
 }
 
 @media only screen and (max-width: 600px){
+
+  body {
+      background-image: none;
+  }
+
+  .banner{
+    background-color: grey;
+  }
+
   section#works .works-container {
       display: flex;
       grid-template-columns: auto auto auto;
       background-color: white;
       flex-direction: column;
   }
+  
   .work-image {
       overflow: hidden;
       width: 80%;
