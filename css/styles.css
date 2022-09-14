@@ -166,7 +166,6 @@ a.link-portafolio {
 section#works .works-container {
   display: grid;
   grid-template-columns: auto auto auto;
-  background-color: white;
   grid-template-rows: 25vh 25vh;
   grid-template-areas:
       "belcorp tarjeta community"
@@ -177,6 +176,7 @@ section#works .works-container {
 .work-image{
   overflow: hidden;
   background-position: center;
+  margin: 2px;
 }
 
 .link-portafolio::before{
@@ -184,7 +184,6 @@ section#works .works-container {
   height: 100%;
   display: flex;
   background-color: transparent;
-  content: 'hola';
   color: transparent;
   text-align: center;
   transition: 0.5s;
@@ -197,7 +196,6 @@ section#works .works-container {
   width: 100%;
   height: 100%;
   background-color: #000000ad;
-  content: 'hola';
   color: white;
   text-align: center;
 }
@@ -209,7 +207,7 @@ section#works .works-container {
 }
 
 .item1 .link-portafolio::before{
-  content: 'BELCORP';
+  content: 'Belcorp';
 }
 
 .item2{
@@ -220,7 +218,7 @@ section#works .works-container {
 
 
 .item2 .link-portafolio::before{
-  content: 'FLEX BOX';
+  content: 'Css Flex Box';
 }
 
 .item3{
@@ -230,7 +228,7 @@ section#works .works-container {
 }
 
 .item3 .link-portafolio::before{
-  content: 'GRID';
+  content: 'Css Grid';
 }
 
 .item4{
@@ -240,7 +238,7 @@ section#works .works-container {
 }
 
 .item4 .link-portafolio::before{
-  content: 'COMMENTS';
+  content: 'Html Comments';
 }
 
 .item5{
@@ -250,7 +248,7 @@ section#works .works-container {
 }
 
 .item5 .link-portafolio::before{
-  content: 'POKEDEX';
+  content: 'Pokedex';
 }
 
 section#works .works-container .link-portafolio img{
