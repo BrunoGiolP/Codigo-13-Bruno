@@ -293,6 +293,17 @@ h4 p{
   font-size: 8.8em;
 }
 
+.container-contact{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.container-form {
+  justify-content: center;
+}
+
+
 
 footer{
   position: relative;
