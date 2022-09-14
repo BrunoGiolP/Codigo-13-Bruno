@@ -105,40 +105,21 @@
 
     <script>
 
-if ($(window).width() < 600) {
-  var cuerpo = document.getElementsByTagName('header')[0];
-      cuerpo.style.backgroundColor = 'transparent';
-
-      // trigger this function every time the user scrolls
-      window.onscroll = function (event) {
-          var scroll = window.pageYOffset;
-          if (scroll < 300) {
-              // green
-              cuerpo.style.backgroundColor = 'transparent';
-          } else {
-              // purple
-              cuerpo.style.backgroundColor = 'white';
+        // trigger this function every time the user scrolls
+        window.onscroll = function (event) {
+            var scroll = window.pageYOffset;
+            if (scroll < 300){
+                const textoNav = document.querySelectorAll(".nav-item");
+                for (let i = 0; i < textoNav.length; i++) {
+                  textoNav[i].style.color = "black";
+              }
+            } else{
+              const textoNav = document.querySelectorAll(".nav-item");
+                for (let i = 0; i < textoNav.length; i++) {
+                  textoNav[i].style.color = "white";
+              }
+            }
           }
-      }
-} else {
-  var cuerpo = document.getElementsByTagName('header')[0];
-      cuerpo.style.backgroundColor = 'transparent';
-
-      // trigger this function every time the user scrolls
-      window.onscroll = function (event) {
-          var scroll = window.pageYOffset;
-          if (scroll < 300) {
-              // green
-              cuerpo.style.backgroundColor = 'transparent';
-          } else {
-              // purple
-              cuerpo.style.backgroundColor = 'black';
-          }
-      }
-}
-
-      
-      
   </script>
   </body>
 </html>

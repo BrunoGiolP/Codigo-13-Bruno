@@ -61,7 +61,7 @@ body {
 }
 
 .nav ul li a:hover{
-  color: #ff6464;
+  color: #ff6464 !important;
 }
 
 h1 span{
@@ -327,7 +327,7 @@ footer span{
       background-color: white;
       flex-direction: column;
   }
-  
+
   .work-image {
       overflow: hidden;
       width: 80%;
@@ -341,7 +341,7 @@ footer span{
   }
 
   .header ul li a{
-    color: white !important;
+    color: white;
   }
   .banner {
     flex-direction: column-reverse;
