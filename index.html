@@ -34,13 +34,13 @@
       <nav class="nav">
         <ul>
           <li>
-            <a href="#works">WORKS</a>
+            <a class="nav-item" href="#works">WORKS</a>
           </li>
           <li>
-            <a href="https://brunogiolp.github.io/Codigo-13-Bruno/semana4/docs.html" target="_blank">JS DOCS</a>
+            <a class="nav-item" href="https://brunogiolp.github.io/Codigo-13-Bruno/semana4/docs.html" target="_blank">JS DOCS</a>
           </li>
           <li>
-            <a href="">CONTACTS</a>
+            <a class="nav-item" href="">CONTACTS</a>
           </li>
         </ul>
       </nav>
@@ -102,5 +102,22 @@
       </span>
         <p>Copyright (c) 2003 Company Name All Rights Reserved This product is protected by copyright and distributed under licenses restricting copying, distribution, and decompilation.</p>
     </footer>
+
+    <script>
+      var cuerpo = document.getElementsByTagName('header')[0];
+      cuerpo.style.backgroundColor = 'transparent';
+
+      // trigger this function every time the user scrolls
+      window.onscroll = function (event) {
+          var scroll = window.pageYOffset;
+          if (scroll < 300) {
+              // green
+              cuerpo.style.backgroundColor = 'transparent';
+          } else {
+              // purple
+              cuerpo.style.backgroundColor = 'white';
+          }
+      }
+  </script>
   </body>
 </html>
