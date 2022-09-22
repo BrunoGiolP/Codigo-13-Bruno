@@ -1,9 +1,9 @@
-// var nombre = document.getElementById('name');
-// var correo = document.getElementById('email');
-// var asunto = document.getElementById('subject');
-// var mensaje = document.getElementById('message');
-// var error = document.getElementById('Error');
-// error.style.color = 'Red';
+var nombre = document.getElementById('name');
+var correo = document.getElementById('email');
+var asunto = document.getElementById('subject');
+var mensaje = document.getElementById('message');
+var error = document.getElementById('Error');
+error.style.color = 'Red';
 
 // function enviarFormulario(){
 //     console.log('Enviando formulario...');
@@ -42,32 +42,23 @@ formulario.addEventListener('submit', function(evt){
     console.log(datos.get('subject'))
     console.log(datos.get('message'))
 
-    fetch('https://raw.githubusercontent.com/BrunoGiolP/Codigo-13-Bruno/main/post.php',{
-        method: 'POST',
-        body: datos
-    })
-    .then( res => res.json())
-    .then( data => {
-        console.log(data)
-    })
+  
+          var mensajesError = [];
     
+             if(nombre.value === null || nombre.value === ''){
+                 mensajesError.push('Ingresa tu nombre');
+             }
+             if(correo.value === null || correo.value === ''){
+                 mensajesError.push('Ingresa tu email');
+             }
 
-        //   var mensajesError = [];
-    
-        //      if(nombre.value === null || nombre.value === ''){
-        //          mensajesError.push('Ingresa tu nombre');
-        //      }
-        //      if(correo.value === null || correo.value === ''){
-        //          mensajesError.push('Ingresa tu email');
-        //      }
+             if(asunto.value === null || asunto.value === ''){
+                 mensajesError.push('Ingresa un asunto');
+             }
+             if(mensaje.value === null || mensaje.value === ''){
+                 mensajesError.push('Ingresa un mensaje');
+             }
 
-        //      if(asunto.value === null || asunto.value === ''){
-        //          mensajesError.push('Ingresa un asunto');
-        //      }
-        //      if(mensaje.value === null || mensaje.value === ''){
-        //          mensajesError.push('Ingresa un mensaje');
-        //      }
-
-        //      error.innerHTML = mensajesError.join(', ');
+             error.innerHTML = mensajesError.join(', ');
 
 })
