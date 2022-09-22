@@ -42,7 +42,7 @@ formulario.addEventListener('submit', function(evt){
     console.log(datos.get('subject'))
     console.log(datos.get('message'))
 
-    fetch('post.php',{
+    fetch('https://raw.githubusercontent.com/BrunoGiolP/Codigo-13-Bruno/main/post.php',{
         method: 'POST',
         body: datos
     })
